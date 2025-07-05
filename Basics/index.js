@@ -49,8 +49,46 @@
 // i = i++ + ++i;
 // console.log(i);
 
-let b = true // true is rendered as 1
-console.log(++b);
+// let b = true // true is rendered as 1
+// console.log(++b);
 
 // let a = 10++ // An error as unary can not be applied to any value and also ++(--a) is also an error
 // console.log(a);
+
+// Math Functions
+// let fl = 85.15154
+
+// console.log(Math.round(10.5));
+// console.log(Math.ceil(10.1));
+// console.log(Math.floor(10.9));
+// console.log(Math.trunc(18.98));
+// console.log(Math.pow(2,5)); // 2^5
+// console.log(Math.sqrt(4)); // Root over 4
+// console.log(Math.cbrt(8)); // Cube Root over 8
+// console.log(Math.abs(-8));
+// console.log(Math.abs(8));
+// console.log(Math.max(78,65,26));
+// console.log(Math.min(78,65,26));
+// console.log(Math.random());
+// console.log(Math.toFixed(fl)); // Converts to String
+
+// Q1 Calculate Area and Perimeter of Rectangle
+// let a = 5
+// let b = 7
+// console.log(5*7);
+// console.log(2*(5+7));
+
+// Q2 Generate OTP
+// console.log(Math.floor(Math.random()*9000) + 1000);
+
+// Q3 Calculate Area of Triangle by Herons Formulae
+// let a = 5;
+// let b = 3;
+// let c = 4;
+// let s = (a + b + c) / 2;
+
+// console.log(Math.sqrt(s*(s-a)*(s-b)*(s-c)));
+
+// Q4 Circumference of a Circle
+let r = 12
+console.log(Number((2*Math.PI*r).toFixed(2)));
