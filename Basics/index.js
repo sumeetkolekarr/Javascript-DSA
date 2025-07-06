@@ -90,5 +90,5 @@
 // console.log(Math.sqrt(s*(s-a)*(s-b)*(s-c)));
 
 // Q4 Circumference of a Circle
-let r = 12
-console.log(Number((2*Math.PI*r).toFixed(2)));
+// let r = 12
+// console.log(Number((2*Math.PI*r).toFixed(2)));
