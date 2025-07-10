@@ -30,6 +30,12 @@
 //   i++;
 // }
 
+// Do-While Loop
+// let i = 1;
+// do {
+//   console.log("Hi");
+// } while (i > 5);
+
 // Q. Sum of n natural Number
 // let num = 5
 // sum = 0
@@ -88,11 +94,81 @@
 // console.log(sum);
 
 // Reversing the number with while loop:
-n = 124;
-rev = 0;
-while (n > 0) {
-  let rem = n % 10;
-  rev = rev * 10 + rem;
-  n = Math.floor(n / 10);
-}
-console.log(rev);
+// n = 124;
+// rev = 0;
+// while (n > 0) {
+//   let rem = n % 10;
+//   rev = rev * 10 + rem;
+//   n = Math.floor(n / 10);
+// }
+// console.log(rev);
+
+// Identification of Strong Numbers
+// let n = 145;
+// let sum = 0;
+// let cp = n;
+// while (n > 0) {
+//   let rem = n % 10;
+//   let fact = 1;
+//   for (let i = 1; i <= rem; i++) {
+//     fact *= i;
+//   }
+//   sum = sum + fact;
+//   n = Math.floor(n / 10);
+// }
+// if (sum === cp) {
+//   console.log("Strong");
+// } else {
+//   console.log("Weak");
+// }
+
+// Q. Guess the number
+// console.log("Hi");
+// let random = Math.floor(Math.random() * 100) + 1;
+// let attempt = 0;
+// guess = -1;
+// while (guess !== random) {
+//   guess = Number(prompt("Guess the Number"));
+//   if (isNaN(guess) || guess < 1 || guess > 100) {
+//     console.log("Try again between 1 - 100");
+//   }
+//   attempt++;
+//   if (guess > random) {
+//     console.log("Too High and Try Again");
+//   } else if (guess < random) {
+//     console.log("Too Low and Try Again");
+//   } else {
+//     console.log(
+//       "Congrats, You won and the number was ",
+//       guess,
+//       " and the number of attempt was ",
+//       attempt
+//     );
+//   }
+// }
+
+// Q. Create a Calculator
+// console.log("Sasta Calculator");
+// let guess = prompt("Enter the calc func to perform");
+// while (guess != "q") {
+//   let num1 = Number(prompt("Enter the first number: "));
+//   let num2 = Number(prompt("Enter the second number: "));
+//   switch (guess) {
+//     case "p":
+//       console.log(num1 + num2);
+//       break;
+//     case "s":
+//       console.log(num1 - num2);
+//       break;
+//     case "m":
+//       console.log(num1 * num2);
+//       break;
+//     case "d":
+//       console.log(num1 / num2);
+//       break;
+
+//     default:
+//       break;
+//   }
+//   guess = prompt("Enter the calc func to perform");
+// }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    console.log("Sasta Calculator");
+    let guess = prompt("Enter the calc func to perform");
+    while (guess != "q") {
+      let num1 = Number(prompt("Enter the first number: "));
+      let num2 = Number(prompt("Enter the second number: "));
+      switch (guess) {
+        case "p":
+          console.log(num1 + num2);
+          break;
+        case "s":
+          console.log(num1 - num2);
+          break;
+        case "m":
+          console.log(num1 * num2);
+          break;
+        case "d":
+          console.log(num1 / num2);
+          break;
+
+        default:
+          break;
+      }
+      guess = prompt("Enter the calc func to perform");
+    }
+  </script>
+</html>
