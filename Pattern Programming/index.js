@@ -107,3 +107,17 @@ let prompt = require("prompt-sync")();
 //   }
 //   console.log();
 // }
+
+// A Unique Star Pattern
+let n = Number(prompt("Enter a Number: "));
+k = 1;
+for (let i = 1; i <= n; i++) {
+  for (let j = 1; j <= n - i; j++) {
+    process.stdout.write(" ");
+  }
+  for (let j = 1; j <= k; j++) {
+    process.stdout.write("*");
+  }
+  k += 2;
+  console.log();
+}
